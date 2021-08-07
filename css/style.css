@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
 
 /* Utilites */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Arvo", serif;
 }
@@ -62,7 +65,8 @@ body {
 }
 
 .about-picture {
-  background: url("../img/about-bootstrap-2.jpg") no-repeat center/cover fixed;
+  background: url("../img/about-bootstrap-2-min.jpg") no-repeat center/cover
+    fixed;
   object-fit: cover;
 }
 
@@ -81,6 +85,31 @@ body {
   line-height: 1.2;
 }
 
+/* Carousel Section */
+
+.carousel-item img {
+  height: 227px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-item img {
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .carousel-item img {
+    height: 352px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .carousel-item img {
+    height: 408px;
+  }
+}
+
 .carousel-item:after {
   content: "";
   display: block;
@@ -89,18 +118,31 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Reviews Section */
+
+.blacken::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #filler {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/filler-img.jpg") no-repeat center/cover;
+    url("../img/filler-img-min.jpg") no-repeat center/cover;
 }
 
 /* Progress */
 .filler-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/progress-background.jpg") no-repeat center/cover;
+    url("../img/progress-background-min.jpg") no-repeat center/cover;
 }
 
 .progress-width-70 {
