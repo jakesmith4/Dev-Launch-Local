@@ -70,6 +70,13 @@ body {
   object-fit: cover;
 }
 
+/* Projects */
+.project-container img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
 /* Services */
 .service-img {
   height: 234.95px;
