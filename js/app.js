@@ -26,7 +26,7 @@ scrollLinks.forEach(function (link) {
       left: 0,
       top: position,
     });
-    navToggler.classList.toggle("collapsed");
-    linksContainer.classList.toggle("show");
+    navToggler.classList.remove("collapsed");
+    linksContainer.classList.remove("show");
   });
 });
